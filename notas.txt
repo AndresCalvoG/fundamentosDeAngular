@@ -1,0 +1,41 @@
+clase 1:
+introduccion y usos generales de angular en la industria, asi como sus principales herramientas
+
+clase 2:
+  1. instalacion inicial de angular con el comando
+      npm i -g @angular/cli
+  2. verificamos la version instalada con el comando 
+      ng version
+
+      ng analytics disable --global => desabilitara la caracteristica de compartir psudonimos de uso de datos del cli
+
+  3. Crear nuestra primer aplicacion con el comando
+      ng new name-of-my-app
+      example: ng new my-store
+
+       Would you like to add Angular routing? (y/N) y
+       Which stylesheet format would you like to use? SCSS
+
+       cuando angular termine de compilar las configuraciones de nuestro proyecto
+       debemos ingresar a la carpeta con el comando cd y el nombre de nuestra app
+
+  4. Correr el primer comando para ver la app en un servidor de desarrollo
+      ng serve
+
+clase 3: 
+  algunas variantes del comando serve:
+    ng serve -o => al terminar abre automaticamente el navegador
+    ng serve -o --port=3500 => especifica el puerto donde se abrira el proyecto
+
+    ng version dentro del projecto muestra mas informacion sobre las versiones de las 
+    dependencias o package usadas en el proyecto.
+
+clase 4:
+  Especificacion de los archivos creados en el projecto
+
+  .browserslistrc => le indica a angular en que versiones tiene que ser
+                    compatible mi aplicacion
+  .editorconfig => muestra las reglas de trabajo a tener en cuenta para el equipo
+                    de desarrollo y es leido por la extencion de vsCode editor config
+
+quede en el min 2:40
