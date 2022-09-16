@@ -17,4 +17,8 @@ export class AppComponent {
     motor: 1200,
     marca: 'chevrolet',
   };
+
+  onSave() {
+    console.log('save');
+  }
 }
