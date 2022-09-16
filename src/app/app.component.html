@@ -8,3 +8,11 @@
 <p>Hola soy {{ name }} y tengo {{ age }}</p>
 <!-- usando string interpolation para atributos de imagen -->
 <img src="{{ img }}" alt="mujer" />
+<hr />
+<!-- property binding para manipular atributos desde el js -->
+<h1>propiedades</h1>
+<button [disabled]="btnDisabled">Enviar</button>
+<input type="text" [value]="name" />
+<progress max="100" [value]="age"></progress>
+<!-- usando objetos -->
+<input type="text" [value]="car.marca" />
