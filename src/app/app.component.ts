@@ -21,4 +21,13 @@ export class AppComponent {
   onSave() {
     console.log('save');
   }
+  onScroll(event: Event) {
+    const element = event.target as HTMLElement;
+    console.log(element.scrollTop);
+    console.log(event);
+  }
+  onChange(event: Event) {
+    const element = event.target as HTMLInputElement;
+    console.log(element.value);
+  }
 }
