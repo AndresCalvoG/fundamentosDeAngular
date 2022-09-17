@@ -39,3 +39,10 @@ scroll
 <h1>NG Model</h1>
 <input type="text" required #nameInput="ngModel" [(ngModel)]="car.marca" />
 <p>{{ nameInput.valid }}</p>
+
+<!-- estructuras de control con angular con *ngIf-->
+<h1>*ngIf</h1>
+<p *ngIf="nameInput.valid; else elseBlock">my content</p>
+<ng-template #elseBlock>
+  <p>resultado de else</p>
+</ng-template>
