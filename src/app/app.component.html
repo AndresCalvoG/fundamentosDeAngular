@@ -35,3 +35,7 @@ scroll
 </div>
 
 <input type="text" (keyup)="onChange($event)" />
+
+<h1>NG Model</h1>
+<input type="text" required #nameInput="ngModel" [(ngModel)]="car.marca" />
+<p>{{ nameInput.valid }}</p>
