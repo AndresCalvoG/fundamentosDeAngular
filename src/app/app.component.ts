@@ -30,6 +30,22 @@ export class AppComponent {
       name: 'product2',
       price: 28,
     },
+    {
+      name: 'product2',
+      price: 28,
+    },
+    {
+      name: 'product2',
+      price: 28,
+    },
+    {
+      name: 'product2',
+      price: 28,
+    },
+    {
+      name: 'product2',
+      price: 28,
+    },
   ];
 
   onSave() {

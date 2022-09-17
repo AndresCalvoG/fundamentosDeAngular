@@ -3,3 +3,18 @@
   height: 200px;
   overflow: scroll;
 }
+
+.product-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  div {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 400px) {
+}

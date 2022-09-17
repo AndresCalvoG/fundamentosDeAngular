@@ -61,11 +61,12 @@ scroll
 
 <!-- *ngFor para objetos -->
 <h1>*ngFor para objetos</h1>
-<div *ngFor="let product of products">
-  <h2>{{ product.name }}</h2>
-  <p>{{ product.price }}</p>
+<div class="product-list">
+  <div *ngFor="let product of products">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.price }}</p>
+  </div>
 </div>
-
 <!-- estructura de decision *ngSwitch -->
 <h1>[ngSwitch]</h1>
 <input type="number" [(ngModel)]="car.model" />
