@@ -46,3 +46,15 @@ scroll
 <ng-template #elseBlock>
   <p>resultado de else</p>
 </ng-template>
+
+<!-- estructura *ngFor pra iterar elementos -->
+<h1>gnFor</h1>
+<ul>
+  <li *ngIf="names.length === 0">No hay mas nombre</li>
+  <li *ngFor="let name of names; index as i">
+    {{ i }}{{ name }}
+    <button (click)="deleteName(i)">Delete</button>
+  </li>
+</ul>
+<input type="text" #newNameInput [(ngModel)]="newName" />
+<button (click)="addName()">add name</button>

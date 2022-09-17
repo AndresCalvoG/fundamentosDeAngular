@@ -1,3 +1,4 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component } from '@angular/core';
 
 @Component({
@@ -17,7 +18,8 @@ export class AppComponent {
     motor: 1200,
     marca: 'chevrolet',
   };
-
+  names: string[] = ['andres', 'sara', 'felipe', 'calvo'];
+  newName = '';
   onSave() {
     console.log('save');
   }
@@ -29,5 +31,12 @@ export class AppComponent {
   onChange(event: Event) {
     const element = event.target as HTMLInputElement;
     console.log(element.value);
+  }
+  addName() {
+    this.names.push(this.newName);
+    this.newName = '';
+  }
+  deleteName(i: number) {
+    this.names.splice(i, 1);
   }
 }
