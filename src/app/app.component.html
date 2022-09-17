@@ -65,3 +65,13 @@ scroll
   <h2>{{ product.name }}</h2>
   <p>{{ product.price }}</p>
 </div>
+
+<!-- estructura de decision *ngSwitch -->
+<h1>[ngSwitch]</h1>
+<input type="number" [(ngModel)]="car.model" />
+<div [ngSwitch]="car.model">
+  <p *ngSwitchCase="2013">carro 2013 esta viejo</p>
+  <p *ngSwitchCase="2014">carro 2014 esta actual</p>
+  <p *ngSwitchCase="2015">carro 2015 esta nuevo</p>
+  <p *ngSwitchDefault="">No hay modelos</p>
+</div>
