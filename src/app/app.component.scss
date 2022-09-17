@@ -16,5 +16,13 @@
   }
 }
 
+.error {
+  color: red;
+  opacity: 0;
+  &.active {
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 400px) {
 }

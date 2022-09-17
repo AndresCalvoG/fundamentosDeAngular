@@ -77,3 +77,13 @@ scroll
   <p *ngSwitchDefault="">No hay modelos</p>
 </div>
 <!-- intalacion de angular dev-tools -->
+
+<!-- modificando clases y stilos desde ts -->
+<h1>Clases y estilos</h1>
+<input type="text" required #nameInput2="ngModel" [(ngModel)]="car.marca" />
+<p class="error" [class.active]="nameInput2.invalid">el campo es requerido</p>
+<!-- modificando el estilo de forma directa -->
+<input type="text" required #nameInput3="ngModel" [(ngModel)]="car.marca" />
+<p [style.font-style]="nameInput3.invalid ? 'italic' : 'normal'">
+  el campo es requerido
+</p>
