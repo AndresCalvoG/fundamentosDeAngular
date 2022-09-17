@@ -58,3 +58,10 @@ scroll
 </ul>
 <input type="text" #newNameInput [(ngModel)]="newName" />
 <button (click)="addName()">add name</button>
+
+<!-- *ngFor para objetos -->
+<h1>*ngFor para objetos</h1>
+<div *ngFor="let product of products">
+  <h2>{{ product.name }}</h2>
+  <p>{{ product.price }}</p>
+</div>

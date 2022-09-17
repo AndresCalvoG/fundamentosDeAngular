@@ -1,5 +1,6 @@
 import { ThisReceiver } from '@angular/compiler';
 import { Component } from '@angular/core';
+import { Product } from './product.model';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,17 @@ export class AppComponent {
   };
   names: string[] = ['andres', 'sara', 'felipe', 'calvo'];
   newName = '';
+  products: Product[] = [
+    {
+      name: 'product1',
+      price: 25,
+    },
+    {
+      name: 'product2',
+      price: 28,
+    },
+  ];
+
   onSave() {
     console.log('save');
   }
