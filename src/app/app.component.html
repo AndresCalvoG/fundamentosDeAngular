@@ -115,3 +115,42 @@ scroll
     }"
   ></div>
 </div>
+
+<!-- construyendo formularios con angular -->
+<h1>formulario</h1>
+<form (ngSubmit)="onRegister()" #myForm="ngForm">
+  <div class="input-group">
+    <label from="name">Nombre</label>
+    <input
+      type="text"
+      name="name"
+      required
+      id="name"
+      [(ngModel)]="register.name"
+    />
+    <p>mensaje de error</p>
+  </div>
+  <div class="input-group">
+    <label from="email">Email</label>
+    <input
+      type="email"
+      name="email"
+      required
+      id="email"
+      [(ngModel)]="register.email"
+    />
+    <p>mensaje de error</p>
+  </div>
+  <div class="input-group">
+    <label from="password">Password</label>
+    <input
+      type="password"
+      name="password"
+      required
+      id="password"
+      [(ngModel)]="register.password"
+    />
+    <p>mensaje de error</p>
+  </div>
+  <button [disabled]="myForm.invalid" type="submit">Registrar</button>
+</form>

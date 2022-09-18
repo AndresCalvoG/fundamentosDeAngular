@@ -26,6 +26,11 @@ export class AppComponent {
     height: 100,
     background: 'red',
   };
+  register = {
+    name: '',
+    email: '',
+    password: '',
+  };
   products: Product[] = [
     {
       name: 'product1',
@@ -71,5 +76,8 @@ export class AppComponent {
   }
   deleteName(i: number) {
     this.names.splice(i, 1);
+  }
+  onRegister() {
+    console.log(this.register);
   }
 }
