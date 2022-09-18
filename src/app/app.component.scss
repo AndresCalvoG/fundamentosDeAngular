@@ -23,6 +23,15 @@
     opacity: 1;
   }
 }
+.line-error {
+  font-size: 16px;
+  &.valid {
+    color: green;
+  }
+  &.invalid {
+    color: red;
+  }
+}
 
 @media screen and (min-width: 400px) {
 }
