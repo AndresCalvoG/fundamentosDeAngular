@@ -1,0 +1,160 @@
+<div [style.display]="'none'">
+  <h1>Hola Mundo</h1>
+  <!-- podemos insertar codigo javascript en el html usando los doble
+  {{expresion}} gracias a string interpolation -->
+  <h2>{{ "Hola mundo".toUpperCase() }}</h2>
+  <!-- tambien sirve para expresiones matematicas -->
+  <p>3 + 3= {{ 3 + 3 }}</p>
+  <!-- conectando con el archivo de logica app.component.ts -->
+  <p>Hola soy {{ name }} y tengo {{ age }}</p>
+  <!-- usando string interpolation para atributos de imagen -->
+  <img src="{{ img }}" alt="mujer" />
+  <hr />
+  <!-- property binding para manipular atributos desde el js -->
+  <h1>propiedades</h1>
+  <button [disabled]="btnDisabled">Enviar</button>
+  <input type="text" [value]="name" />
+  <progress max="100" [value]="age"></progress>
+  <!-- usando objetos -->
+  <input type="text" [value]="car.marca" />
+
+  <!-- eventos en angular usando () y funciones -->
+  <h1>Eventos</h1>
+  <button (click)="onSave()">Save</button>
+
+  <!-- lista de eventos
+   click
+  scroll
+   -->
+  <div class="box" (scroll)="onScroll($event)">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde recusandae
+      inventore libero suscipit fugit dignissimos, alias, temporibus facere,
+      deserunt minima excepturi adipisci commodi nesciunt dolores debitis nihil
+      eum qui dolorum.
+    </p>
+  </div>
+
+  <input type="text" (keyup)="onChange($event)" />
+
+  <h1>NG Model</h1>
+  <input type="text" required #nameInput="ngModel" [(ngModel)]="car.marca" />
+  <p>{{ nameInput.valid }}</p>
+
+  <!-- estructuras de control con angular con *ngIf-->
+  <h1>*ngIf</h1>
+  <p *ngIf="nameInput.valid; else elseBlock">my content</p>
+  <ng-template #elseBlock>
+    <p>resultado de else</p>
+  </ng-template>
+
+  <!-- estructura *ngFor pra iterar elementos -->
+  <h1>gnFor</h1>
+  <ul>
+    <li *ngIf="names.length === 0">No hay mas nombre</li>
+    <li *ngFor="let name of names; index as i">
+      {{ i }}{{ name }}
+      <button (click)="deleteName(i)">Delete</button>
+    </li>
+  </ul>
+  <input type="text" #newNameInput [(ngModel)]="newName" />
+  <button (click)="addName()">add name</button>
+
+  <!-- *ngFor para objetos -->
+  <h1>*ngFor para objetos</h1>
+  <div class="product-list">
+    <div *ngFor="let product of products">
+      <h2>{{ product.name }}</h2>
+      <p>{{ product.price }}</p>
+    </div>
+  </div>
+  <!-- estructura de decision *ngSwitch -->
+  <h1>[ngSwitch]</h1>
+  <input type="number" [(ngModel)]="car.model" />
+  <div [ngSwitch]="car.model">
+    <p *ngSwitchCase="2013">carro 2013 esta viejo</p>
+    <p *ngSwitchCase="2014">carro 2014 esta actual</p>
+    <p *ngSwitchCase="2015">carro 2015 esta nuevo</p>
+    <p *ngSwitchDefault="">No hay modelos</p>
+  </div>
+  <!-- intalacion de angular dev-tools -->
+
+  <!-- modificando clases y stilos desde ts -->
+  <h1>Clases y estilos</h1>
+  <input type="text" required #nameInput2="ngModel" [(ngModel)]="car.marca" />
+  <p class="error" [class.active]="nameInput2.invalid">el campo es requerido</p>
+  <!-- modificando el estilo de forma directa -->
+  <input type="text" required #nameInput3="ngModel" [(ngModel)]="car.marca" />
+  <p [style.font-style]="nameInput3.invalid ? 'italic' : 'normal'">
+    el campo es requerido
+  </p>
+
+  <!-- usando ngclass y ngstyle -->
+  <h1>NgClass & NgStyle</h1>
+  <input type="text" required #nameInput4="ngModel" [(ngModel)]="car.marca" />
+  <p
+    class="line-error"
+    [ngClass]="{
+      valid: nameInput4.valid,
+      invalid: nameInput4.invalid
+    }"
+  >
+    el campo es requerido
+  </p>
+  <div class="product-list">
+    <div>
+      <input type="number" [(ngModel)]="box.width" />
+      <input type="number" [(ngModel)]="box.height" />
+      <input type="color" [(ngModel)]="box.background" />
+    </div>
+    <div
+      [ngStyle]="{
+        'width.px': box.width,
+        'height.px': box.height,
+        'background-color': box.background,
+        display: 'block'
+      }"
+    ></div>
+  </div>
+
+  <!-- construyendo formularios con angular -->
+  <h1>formulario</h1>
+  <form (ngSubmit)="onRegister()" #myForm="ngForm">
+    <div class="input-group">
+      <label from="name">Nombre</label>
+      <input
+        type="text"
+        name="name"
+        required
+        id="name"
+        [(ngModel)]="register.name"
+      />
+      <p>mensaje de error</p>
+    </div>
+    <div class="input-group">
+      <label from="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        required
+        id="email"
+        [(ngModel)]="register.email"
+      />
+      <p>mensaje de error</p>
+    </div>
+    <div class="input-group">
+      <label from="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        required
+        id="password"
+        [(ngModel)]="register.password"
+      />
+      <p>mensaje de error</p>
+    </div>
+    <button [disabled]="myForm.invalid" type="submit">Registrar</button>
+  </form>
+  <!-- firebase hosting para el proyecto -->
+  <!-- iniciamos la compilacion del proyecto con el comando ng build -->
+</div>
