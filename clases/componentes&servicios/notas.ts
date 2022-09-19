@@ -14,4 +14,7 @@ clase 2: Componentes
   
   * Generamos cada nuevo componente de angular desde el cli usando el comando
     1. ng g c nameOfComponent
+
+clase 3: @Input
+  permite pasar informacion desde el padre a los hijos
 */

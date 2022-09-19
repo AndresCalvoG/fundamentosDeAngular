@@ -8,6 +8,8 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  //segundo curso de Angular
+  imgParent: string = 'https://www.w3schools.com/howto/img_avatar.png';
   //las variables deben ser publicas para usarlas en el template
   name: string = 'andres';
   age: number = 28;

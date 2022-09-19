@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 //Decorador: le dicen al compilador como se comporta esa clase
 @Component({
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./img.component.scss'],
 })
 export class ImgComponent implements OnInit {
+  @Input() img: string = 'valor inicial';
   constructor() {}
 
   ngOnInit(): void {}
