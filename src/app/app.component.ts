@@ -9,6 +9,7 @@ import { Product } from '../app/models/product.model';
 })
 export class AppComponent {
   //segundo curso de Angular
+  showImg = true;
   products: Product[] = [
     {
       id: '1',
@@ -32,5 +33,8 @@ export class AppComponent {
   imgParent: string = 'https://www.w3schools.com/howto/img_avatar.png';
   onLoaded(img: string) {
     console.log('log padre ' + img);
+  }
+  toggleImg() {
+    this.showImg = !this.showImg;
   }
 }

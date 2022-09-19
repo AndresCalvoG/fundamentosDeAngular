@@ -6,6 +6,7 @@
   [style.width.px]="100"
   *ngIf="img; else elseImg"
 />
+<h3>{{ counter }}</h3>
 <ng-template #elseImg>
   <img [src]="imgDefault" [style.width.px]="100" alt="" />
 </ng-template>
