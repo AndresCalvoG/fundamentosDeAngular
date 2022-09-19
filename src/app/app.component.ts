@@ -10,6 +10,9 @@ import { Product } from './product.model';
 export class AppComponent {
   //segundo curso de Angular
   imgParent: string = 'https://www.w3schools.com/howto/img_avatar.png';
+  onLoaded(img: string) {
+    console.log('log padre ' + img);
+  }
   //las variables deben ser publicas para usarlas en el template
   name: string = 'andres';
   age: number = 28;

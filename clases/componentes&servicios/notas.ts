@@ -1,7 +1,7 @@
 /*
 clase 1: piezas clave de angular
   1. componentes
-  2. piets
+  2. pipes
   3. directivas
   4. servicios
 
@@ -17,4 +17,7 @@ clase 2: Componentes
 
 clase 3: @Input
   permite pasar informacion desde el padre a los hijos
+
+clase 4: @Output
+  permite pasar informacion desde el hijo al padre
 */
