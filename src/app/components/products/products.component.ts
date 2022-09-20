@@ -10,27 +10,27 @@ export class ProductsComponent implements OnInit {
   products: Product[] = [
     {
       id: '1',
-      name: 'product 1',
-      image: '../../../assets/images/product.jpeg',
-      price: 100,
+      name: 'EL mejor juguete',
+      price: 565,
+      image: './assets/images/toy.jpg'
     },
     {
       id: '2',
-      name: 'product 2',
-      image: '../../../assets/images/product.jpeg',
-      price: 200,
+      name: 'Bicicleta casi nueva',
+      price: 356,
+      image: './assets/images/bike.jpg'
     },
     {
       id: '3',
-      name: 'product 3',
-      image: '../../../assets/images/product.jpeg',
-      price: 150,
+      name: 'Colleción de albumnes',
+      price: 34,
+      image: './assets/images/album.jpg'
     },
     {
       id: '4',
-      name: 'product 4',
-      image: '../../../assets/images/product.jpeg',
-      price: 120,
+      name: 'Mis libros',
+      price: 23,
+      image: './assets/images/books.jpg'
     },
   ];
 
