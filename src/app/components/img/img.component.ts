@@ -28,8 +28,8 @@ export class ImgComponent
   @Output() loaded = new EventEmitter<string>(); // para enviar datos al componente padre
 
   imgDefault: string = '../../../assets/images/default-image-620x600.jpg';
-  counter = 0;
-  refInterval: number | undefined;
+  // counter = 0;
+  // refInterval: number | undefined;
 
   constructor() {
     //before render
@@ -48,10 +48,10 @@ export class ImgComponent
     //here you can put async code
     //this method only run once time
     console.log('ngOnInit', 'imgValue => ', this.img);
-    this.refInterval = window.setInterval(() => {
-      this.counter += 1;
-      console.log('run counter');
-    }, 1000);
+    // this.refInterval = window.setInterval(() => {
+    //   this.counter += 1;
+    //   console.log('run counter');
+    // }, 1000);
   }
   ngAfterViewInit(): void {
     //after render
@@ -61,7 +61,7 @@ export class ImgComponent
   ngOnDestroy(): void {
     //when component is deleted
     console.log('ngOnDestroy');
-    window.clearInterval(this.refInterval);
+    // window.clearInterval(this.refInterval);
   }
 
   imgError() {

@@ -1,6 +1,5 @@
 import { ThisReceiver } from '@angular/compiler';
 import { Component } from '@angular/core';
-import { Product } from '../app/models/product.model';
 
 @Component({
   selector: 'app-root',
@@ -10,26 +9,7 @@ import { Product } from '../app/models/product.model';
 export class AppComponent {
   //segundo curso de Angular
   showImg = true;
-  products: Product[] = [
-    {
-      id: '1',
-      name: 'product 1',
-      image: '../../../assets/images/product.jpeg',
-      price: 100,
-    },
-    {
-      id: '2',
-      name: 'product 1',
-      image: '../../../assets/images/product.jpeg',
-      price: 100,
-    },
-    {
-      id: '3',
-      name: 'product 1',
-      image: '../../../assets/images/product.jpeg',
-      price: 100,
-    },
-  ];
+
   imgParent: string = 'https://www.w3schools.com/howto/img_avatar.png';
   onLoaded(img: string) {
     console.log('log padre ' + img);
