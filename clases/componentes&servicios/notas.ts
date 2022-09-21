@@ -23,4 +23,24 @@ clase 4: @Output
 
 clase 12: servicios
   1. ng g s nameOfService
+
+clase 13: inyeccion de dependencias:
+  despues de crear un servicio este en el archivo .ts trae
+  un decorador @Inyectable y permite que se pueda inyectar en otros
+  componentes y trae un objeto con un atributo providedIn el cual
+  define el scope o alcance de el servicio.
+  para usarlo se debe importar desde el archivo al componente
+  y luego pasarlo a traves de los parametros de el constructor.
+
+  de esta manera angular crea una instancia de este servicio y la pone a disposicion de
+  el componente.
+  siempre puedo tener varios servicios y varios componentes
+  y podria inyectar un servicio dentro de otro.
+
+  pero se dbe tener cuidado de no inyectar un servicio en otro y este en el anterios
+  porque tendriamos una doble inyeccion y tendriamos un error de referencia circular
+  angular usa el patron singleton para manejar las instancias
+  de estos servicios.
+
+
 */
