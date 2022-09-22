@@ -42,5 +42,9 @@ clase 13: inyeccion de dependencias:
   angular usa el patron singleton para manejar las instancias
   de estos servicios.
 
+clase 14: obteniendos datos de una API
+  debemos usar el modulo Angular Http @angular/common/http
+  añadimos al archivo app.module.ts:
+    import {HttpClientModule} from '@angular/common/http'
 
 */

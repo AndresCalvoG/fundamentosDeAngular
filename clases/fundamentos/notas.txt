@@ -4,7 +4,7 @@ introduccion y usos generales de angular en la industria, asi como sus principal
 clase 2:
   1. instalacion inicial de angular con el comando
       npm i -g @angular/cli
-  2. verificamos la version instalada con el comando 
+  2. verificamos la version instalada con el comando
       ng version
 
       ng analytics disable --global => desabilitara la caracteristica de compartir psudonimos de uso de datos del cli
@@ -22,12 +22,12 @@ clase 2:
   4. Correr el primer comando para ver la app en un servidor de desarrollo
       ng serve
 
-clase 3: 
+clase 3:
   algunas variantes del comando serve:
     ng serve -o => al terminar abre automaticamente el navegador
     ng serve -o --port=3500 => especifica el puerto donde se abrira el proyecto
 
-    ng version dentro del projecto muestra mas informacion sobre las versiones de las 
+    ng version dentro del projecto muestra mas informacion sobre las versiones de las
     dependencias o package usadas en el proyecto.
 
 clase 4:
@@ -38,4 +38,6 @@ clase 4:
   .editorconfig => muestra las reglas de trabajo a tener en cuenta para el equipo
                     de desarrollo y es leido por la extencion de vsCode editor config
 
-quede en el min 2:40
+clase 19:
+  añadimos a app.module.ts
+  import { FormsModule } from '@angular/forms';

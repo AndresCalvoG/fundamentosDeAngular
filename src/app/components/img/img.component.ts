@@ -35,19 +35,19 @@ export class ImgComponent
     //before render
     //don't put async code
     //this method only run once time
-    console.log('constructor', 'imgValue => ', this.img);
+    //console.log('constructor', 'imgValue => ', this.img);
   }
   ngOnChanges(change: SimpleChanges) {
     //before and during render
     //updating changes in inputs  -- many times
-    console.log('ngOnChanges', 'imgValue => ', this.img);
-    console.log('change:', change);
+    //console.log('ngOnChanges', 'imgValue => ', this.img);
+    //console.log('change:', change);
   }
   ngOnInit(): void {
     //before render
     //here you can put async code
     //this method only run once time
-    console.log('ngOnInit', 'imgValue => ', this.img);
+    //console.log('ngOnInit', 'imgValue => ', this.img);
     // this.refInterval = window.setInterval(() => {
     //   this.counter += 1;
     //   console.log('run counter');
@@ -56,11 +56,11 @@ export class ImgComponent
   ngAfterViewInit(): void {
     //after render
     //handler children
-    console.log('ngAfterViewInit');
+    //console.log('ngAfterViewInit');
   }
   ngOnDestroy(): void {
     //when component is deleted
-    console.log('ngOnDestroy');
+    //console.log('ngOnDestroy');
     // window.clearInterval(this.refInterval);
   }
 
@@ -68,7 +68,7 @@ export class ImgComponent
     this.img = this.imgDefault;
   }
   imgLoaded() {
-    console.log('log hijo');
+    //console.log('log hijo');
     this.loaded.emit(this.img);
   }
 }
