@@ -47,4 +47,11 @@ clase 14: obteniendos datos de una API
   añadimos al archivo app.module.ts:
     import {HttpClientModule} from '@angular/common/http'
 
+clase 15: conociendo los pipes
+  son tuberias como lo indica la traduccion  donde tenemos una entrada
+  luego una transformacion y luego una salida, al ser tubos tienen como
+  caracteristica que se pueden unir asi que la salida de uno se convierte en la entrada
+  de otro.
+  ejemplo de default pipes: usando antes | siempre en el html o render
+    1. currency:'COP'
 */
