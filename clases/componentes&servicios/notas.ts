@@ -63,4 +63,12 @@ clase 17: Directivas
   se usan para hacer modificacion del dom de forma directa y tambien modificar atributos
   iniciamos creando una con el comando: 
   ng g d nameOfDirective
+
+class 18: reactividad basica and state management
+  trata de solucionar las comunicaciones de estados de la aplicacion entre componentes padres a hijos y nietos 
+  o mas con  lo cual es bueno tener un estado global de la aplicacion como lo hace redux o
+  react-context, creando un store para compartir y asi los componentes se pueden
+  suscribir a este estado compartido para recibir actualizaciones de cuando cambie el estado
+  
+
 */

@@ -1,5 +1,5 @@
 <p>La cantidad: {{ myShoppingCart.length }}</p>
-<p>Total: ${{ total }}</p>
+<p>Total: ${{ total.toFixed(2) }}</p>
 <p>Today: {{ today | date: "short" }}</p>
 <p>Ago: {{ today | timeAgo }}</p>
 <p>Otro dia: {{ date | date: "yyyy.MM.dd" }}</p>
