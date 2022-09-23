@@ -69,6 +69,11 @@ class 18: reactividad basica and state management
   o mas con  lo cual es bueno tener un estado global de la aplicacion como lo hace redux o
   react-context, creando un store para compartir y asi los componentes se pueden
   suscribir a este estado compartido para recibir actualizaciones de cuando cambie el estado
-  
 
+clase 19: linter
+  iniciamos con el comando: 
+  ng add @angular-eslint/schematics
+  luego con el comando: ng lint analizaremos el codigo y nos dira que errores podria tener
+  o malas practicas.
+  añadir eslint extension a vs code
 */

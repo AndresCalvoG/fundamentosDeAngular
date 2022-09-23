@@ -16,10 +16,10 @@ import {
   templateUrl: './img.component.html',
   styleUrls: ['./img.component.scss'],
 })
-export class ImgComponent
-  implements OnInit, OnChanges, AfterViewInit, OnDestroy
-{
+//implements OnInit, OnChanges, AfterViewInit, OnDestroy
+export class ImgComponent {
   img: string = '';
+  // eslint-disable-next-line @angular-eslint/no-input-rename
   @Input('img')
   set changeImg(newImg: string) {
     this.img = newImg;
@@ -37,32 +37,32 @@ export class ImgComponent
     //this method only run once time
     //console.log('constructor', 'imgValue => ', this.img);
   }
-  ngOnChanges(change: SimpleChanges) {
-    //before and during render
-    //updating changes in inputs  -- many times
-    //console.log('ngOnChanges', 'imgValue => ', this.img);
-    //console.log('change:', change);
-  }
-  ngOnInit(): void {
-    //before render
-    //here you can put async code
-    //this method only run once time
-    //console.log('ngOnInit', 'imgValue => ', this.img);
-    // this.refInterval = window.setInterval(() => {
-    //   this.counter += 1;
-    //   console.log('run counter');
-    // }, 1000);
-  }
-  ngAfterViewInit(): void {
-    //after render
-    //handler children
-    //console.log('ngAfterViewInit');
-  }
-  ngOnDestroy(): void {
-    //when component is deleted
-    //console.log('ngOnDestroy');
-    // window.clearInterval(this.refInterval);
-  }
+  // ngOnChanges(change: SimpleChanges) {
+  //   //before and during render
+  //   //updating changes in inputs  -- many times
+  //   //console.log('ngOnChanges', 'imgValue => ', this.img);
+  //   //console.log('change:', change);
+  // }
+  // ngOnInit(): void {
+  //   //before render
+  //   //here you can put async code
+  //   //this method only run once time
+  //   //console.log('ngOnInit', 'imgValue => ', this.img);
+  //   // this.refInterval = window.setInterval(() => {
+  //   //   this.counter += 1;
+  //   //   console.log('run counter');
+  //   // }, 1000);
+  // }
+  // ngAfterViewInit(): void {
+  //   //after render
+  //   //handler children
+  //   //console.log('ngAfterViewInit');
+  // }
+  // ngOnDestroy(): void {
+  //   //when component is deleted
+  //   //console.log('ngOnDestroy');
+  //   // window.clearInterval(this.refInterval);
+  // }
 
   imgError() {
     this.img = this.imgDefault;
