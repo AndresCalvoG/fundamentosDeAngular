@@ -1,6 +1,7 @@
 <p>La cantidad: {{ myShoppingCart.length }}</p>
 <p>Total: ${{ total }}</p>
 <p>Today: {{ today | date: "short" }}</p>
+<p>Ago: {{ today | timeAgo }}</p>
 <p>Otro dia: {{ date | date: "yyyy.MM.dd" }}</p>
 <p>{{ "HoLa a La clASe" | uppercase }}</p>
 <div class="products--grid">

@@ -54,4 +54,8 @@ clase 15: conociendo los pipes
   de otro.
   ejemplo de default pipes: usando antes | siempre en el html o render
     1. currency:'COP'
+
+clase 16: crear nuestro propio pipe
+  iniciamos con el comando: 
+  ng g p nameOfPipe
 */
