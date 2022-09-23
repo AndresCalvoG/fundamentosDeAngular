@@ -58,4 +58,9 @@ clase 15: conociendo los pipes
 clase 16: crear nuestro propio pipe
   iniciamos con el comando: 
   ng g p nameOfPipe
+
+clase 17: Directivas
+  se usan para hacer modificacion del dom de forma directa y tambien modificar atributos
+  iniciamos creando una con el comando: 
+  ng g d nameOfDirective
 */
